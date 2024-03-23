@@ -1,0 +1,13 @@
+## template_url_prepopulate_data.cc
+# Adds DDG to the default search engines.
+#
+--- a/components/search_engines/template_url_prepopulate_data.cc
++++ b/components/search_engines/template_url_prepopulate_data.cc
+@@ -66,6 +66,7 @@ constexpr EngineAndTier engines_default[
+     {SearchEngineTier::kTopEngines, &google},
+     {SearchEngineTier::kTopEngines, &bing},
+     {SearchEngineTier::kTopEngines, &yahoo},
++    {SearchEngineTier::kTopEngines, &duckduckgo},
+ };
+ 
+ // Note, the below entries are sorted by country code, not the name in comment.
